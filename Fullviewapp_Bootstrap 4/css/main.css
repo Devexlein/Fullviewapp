@@ -1,0 +1,468 @@
+/* ---- Спецификация ---- */
+@font-face {
+	font-family: 'Gill Sans MT';
+	src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */ 
+	src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Gill Sans MT';
+	src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Gill Sans MT', sans-serif;
+	font-weight: normal;	
+	font-size: 20px;
+	line-height: 1.4em;
+	color: #8c8f94;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	line-height: 1.16em;	 
+	color: #26272d;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;	
+	color: #26272d;
+	transition: all 0.5s ease;	
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: #8c8f94;
+}
+
+.btn {
+	padding: 6px 25px 8px 16px;
+	background: #267df4;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 0.035em;	
+	display: block;
+	width: 132px;
+	transition: all 0.5s ease;
+	text-align: center;	
+}
+
+.btn:hover {
+	color: #fff;
+	background: #1065d8;
+	box-shadow: 0 0 10px rgba(0, 51, 204, 0.5);		
+}
+
+.btn:active {
+	background: #1065d8;
+	box-shadow: none;
+}
+
+.offer__btn {
+	padding: 14px 46px 15px 43px;	
+	color: #26272d;
+	border: solid 1px #26272d;
+  	background: none;
+  	margin: 0 auto;  	
+  	display: inline;
+  	width: auto;
+  }
+
+.offer__btn:hover {
+	border: solid 1px #1065d8;
+}	
+
+.section-title {
+	font-size: 42px;
+	line-height: 1.24em;
+	max-width: 290px;
+	margin: 17px 0 68px;
+}
+
+.section-text {
+	margin-bottom: 27px;
+}
+
+/* ---- Section header ---- */
+
+.header {
+	background: #f4f4f5 url('../img/header-bg.jpg') no-repeat center top / cover;	
+	padding-top: 43px;
+}
+
+.nav__link {
+	margin-left: 35px;
+}
+
+.nav__link a {
+	font-size: 16px;	
+}
+
+.nav__link_active a {
+	color: #8c8f94;
+}
+
+.logo {
+	display: block;	
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #26272d;	
+}
+
+.full {
+	font-weight: bold;
+}
+
+.btn-head {
+	margin-left: 35px;
+}
+
+.fa-apple { 
+	font-size: 20px;     
+	margin-right: 9px;
+}
+
+.offer {
+	text-align: center;
+}
+
+.offer__title {
+	font-size: 62px;	
+	margin-top: 105px;
+	margin-bottom: 35px;
+}
+.offer__text {
+	max-width: 790px;
+	margin: 0 auto;
+	margin-bottom: 69px;
+}
+
+.fa-play {
+	font-size: 13px;
+	margin-right: 12px;
+}
+
+.offer__iphone {
+	display: block;
+	margin: 67px auto 0;	
+}
+
+/* ---- Section features---- */
+
+.benefits {
+	margin-top: 122px;
+}
+
+.benefit-block__title {
+	line-height: 1.31em;
+	font-size: 26px;
+	margin-top: 37px;
+	margin-bottom: 35px;
+}
+
+.benefit-block__text {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.image-benefits {
+	padding-top: 3px;
+}
+
+/* ---- Section protection ---- */
+
+.protection {
+	padding-top: 82px;
+}
+
+.iphone {
+	max-width: 900px;	
+	margin-left: -103px;
+	transition: all 0.5s ease;	
+}
+
+.iphone:hover {
+	transform: scale(1.1);
+}
+
+.info__btn {
+	display: inline !important;	
+	padding: 10px 14px 12px 28px;
+}
+
+.info__btn_primary {
+	margin-right: 22px;	
+}
+
+.fa-arrow-right {
+	font-size: 13px;
+	padding-left: 38px;
+}
+
+.info__btn_secondary {
+	padding-right: 30px;
+}
+
+.info__btns {
+	margin-top: 78px;
+}
+
+/* ---- Section location ---- */
+
+.location {
+	padding-top: 45px;
+}
+
+.partners__title {
+	margin-bottom: 59px;
+}
+
+.partners__group {
+	margin-top: 60px;
+}
+
+.partners__subtitle {
+	line-height: 1.83em;
+	letter-spacing: 1.2px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #26272d;
+	margin-bottom: 26px;
+}
+
+.partners__item {
+	margin-right: 31px;
+	transition: all 0.7s ease;
+}
+
+.partners__item:hover {
+	border-radius: 5px;
+	box-shadow: 5px 10px 30px rgba(111,111,111,0.1);	
+}
+
+.map {
+	max-width: 627px;	
+	margin-top: 57px;
+	margin-left: 42px;
+}
+
+/* ---- Футер ---- */
+
+.footer {
+	padding-top: 240px;
+	padding-bottom: 268px;
+}
+
+.appstore__text {
+	font-size: 14px;
+	line-height: 1.71em;
+	margin: 18px 0 26px;
+}
+
+.appstore__image {
+	transition: all 0.2s ease;
+}
+
+.appstore__image:hover {
+	box-shadow: 0 0 30px rgba(111,111,111,0.4);	
+}
+
+.menu__title {
+	font-size: 12px;
+	line-height: 1.83em;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	margin-bottom: 10px;	
+}
+
+.menu__item a {	
+	font-size: 16px;
+	line-height: 2.25em;
+	color: #8c8f94;
+	border-bottom: 1px solid rgba(255,255,255,0);
+}
+
+.menu__item a:hover {	
+	border-bottom: 1px solid #8c8f94;
+}
+
+
+/* Responsive */
+
+/* Extra large: 1200px - 1399px */
+@media (max-width: 1399px) {
+	.container {
+		max-width: 1140px;
+	}
+	.iphone img {
+		max-width: 699px;
+		padding-right: 25px;
+	}	
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}	
+	.fa-apple {
+		margin-right: 5px;
+	}
+	.iphone {
+		max-width: 630px;
+		margin-left: -70px;		
+	}
+	.map img {
+		max-width: 525px;						
+	}
+	.map {
+		margin-left: 30px;
+	}
+	.footer {
+	    padding-top: 140px;
+	    padding-bottom: 80px;
+	}	
+}	
+
+/* Medium: 991px */
+@media (max-width: 992px) {
+	.section-title {
+		max-width: 600px;
+	}
+	.location {
+		padding-top: 100px;
+	}
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+	.nav__link {
+		display: none;
+	}
+	.iphone {
+		margin: 0 auto;
+		width: 100%;		
+	}
+	.location {
+		padding-top: 140px;
+	}
+	.map img{
+		max-width: 627px;		
+	}
+	.section-title {
+		margin-top: 0;
+		max-width: 600px;
+	}	
+	.menu {
+		margin-top: 70px;
+	}
+	.benefits {
+		margin-top: 62px;
+	}
+	.benefit-block {
+		margin-top: 60px;
+	}
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+	.benefits img {
+		display: block;
+		margin: 0 auto;
+	}
+	.benefits, .info, .location {
+		text-align: center;		
+	}
+	.benefit-block__text, .section-text {
+		text-align: left;
+	}
+	.section-title {
+		margin-bottom: 40px;
+	}
+	.partners__logos a {
+		margin: 0 auto 40px;
+	}
+	.map img {
+		width: 100%;						
+	}
+	.map {
+		margin: 0 auto;		
+	}
+	.footer {
+		padding-top: 70px;
+		text-align: center;		
+	}
+}
+
+/* Extra small: 401px - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: auto;
+	}
+	.offer__title {
+		font-size: 50px;
+	}
+	.offer__iphone {
+		width: 80%;
+	}		
+}
+
+/* Extra small: 0px (320px) - 400px */
+@media (max-width: 400px) {
+	.footer {		
+		text-align: center;
+	}	
+	.btn-head {
+		display: none;
+	}
+	.info__btns {
+		margin-top: 50px;
+	}
+	.info__btn_primary {
+		margin: 40px auto;
+		padding: 7px 12px 8px 28px;		
+		width: auto;
+		display: table !important;	
+	}
+	.partners__item {
+		margin-right: 0px;		
+	}	
+}
